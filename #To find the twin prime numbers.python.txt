@@ -1,0 +1,74 @@
+#To find the twin prime numbers
+#
+def Prime(n):
+    List=[]
+    L=[]
+    for j in range(2,n):
+        for i in range(2,j):
+            if j%i==0:
+                break
+        else:
+            L.append(j)
+    for k in L:
+        for t in L:
+            if k==(t-2):
+                List.append((k,t))
+    
+    print("The co primes are:",List)
+n=1000
+Prime(n)
+
+#Sum of the nums elements is equal to the target and return the index places , same values of index does not count
+#
+nums=[4,4,4]
+target=8
+for i in range(len(nums)):
+    for j in range(len(nums)):
+        if i==j:
+            continue
+        else:
+            if nums[i]+nums[j]==target:
+                if i<j:
+                    print([i,j])
+            break
+###
+def Sum(n):
+    Done=0
+    for i in range(1,n+1):
+        if i%2==0:
+            Done=Done-(i*i)
+        else:
+            Done=Done+(i*i)
+        print(Done)
+    print("The Sum is :",Done)
+n=122
+
+print("  *  "," *** ","*****",sep="\n")
+def pattern():
+    for i in range(1,6):
+        for j in range(1,i+1):
+            print("*",end="")
+        print()
+
+#Diamond pattern
+def P():
+    for i in range(5):
+        for j in range(5):
+            if j>=(i):
+                print("*",end="")
+            
+            else:
+                print(" ",end="")
+        print()
+    print()
+    for i in range(5):
+        for j in range(5):
+            if j<=(i):
+                print("*",end="")
+            
+            else:
+                print(" ",end="")
+        print()
+    print()
+    
+P()
