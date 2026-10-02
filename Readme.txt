@@ -1,1 +1,1 @@
-hi this is my first git push. this is Jerome and krish from btech cse.
+hi this is my first git push. this is Jerome btech cse.
